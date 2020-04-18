@@ -16,6 +16,8 @@ ARG DOCKER_GROUP="docker"
 ARG SYSTEM_DOCKER_VERSION="18.06.3-ce"
 ARG JENKINS_UPDATE_VERSION="2.222.1"
 ARG JENKINS_POST_SETUP_SLEEP_MS="1000"
+ARG JENKINS_INTERNAL_PORT="8080"
+ARG JENKINS_INTERNAL_HOME="/var/jenkins_home"
 ARG RUN_USER="jenkins"
 ARG RUN_GROUP="jenkins"
 ARG HELM_VERSION="v2.16.6"
@@ -25,7 +27,7 @@ ARG APP_JENKINS_VERSION="1.0.0"
 ENV TERM="xterm-256color" \
     SHELL="/bin/bash" \
     LC_ALL="C" \
-    PATH=$PATH:$HOME/.linkerd2/bin \
+    PATH=$PATH:/root/.linkerd2/bin:/root/.istioctl/bin \
     TIMEZONE="Europe/Berlin" \
     DOCKER_CONFIG="/var/jenkins_home/.docker" \
     DOCKER_HOST="unix:///run-data/docker.sock" \
@@ -33,9 +35,9 @@ ENV TERM="xterm-256color" \
     C_SERVICE_TMP_PATH="/.docker/opt/share" \
     C_DOCKER_PATH="/usr/local/bin/docker" \
     CURL_OPTIONS="-sSfLk" \
-    JENKINS_HOME="/var/jenkins_home" \
-    JENKINS_PORT="8080" \
-    JENKINS_OPTS="--httpPort=8080" \
+    JENKINS_HOME="${JENKINS_INTERNAL_HOME}" \
+    JENKINS_PORT="${JENKINS_INTERNAL_PORT}" \
+    JENKINS_OPTS="--httpPort=${JENKINS_INTERNAL_PORT}" \
     JENKINS_URL="http://localhost" \
     JENKINS_POST_SETUP_SLEEP_TIME=${JENKINS_POST_SETUP_SLEEP_MS} \
     JENKINS_UC_DOWNLOAD="http://ftp-nyc.osuosl.org/pub/jenkins" \
@@ -119,7 +121,10 @@ RUN wget -q https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_
 RUN pip3 install awscli --upgrade
 
 # x-layer 8.3.4: install linkerd cli
-RUN curl -sL https://run.linkerd.io/install | sh
+RUN curl -sL https://run.linkerd.io/install | sh -
+
+# x-layer 8.3.5: install istio cli
+RUN curl -sL https://istio.io/downloadIstioctl | sh -
 
 # x-layer 9: clean up this image (could be extend), fix some permissions and write image log entry
 RUN rm -rf /var/cache/apk/* && \
@@ -148,4 +153,4 @@ LABEL maintainer="post@dunkelfrosch.com" \
 #
 
 USER ${RUN_USER}:${RUN_GROUP}
-EXPOSE 8080
+EXPOSE ${JENKINS_INTERNAL_PORT}

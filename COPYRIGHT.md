@@ -20,3 +20,6 @@
 
 - linkerd/cli
 > Copyright (c) buoyant.io, https://linkerd.io/2/reference/cli/
+
+- istio/cli
+> Copyright (c) Istio Authors, https://istio.io/docs/ops/diagnostic-tools/istioctl/

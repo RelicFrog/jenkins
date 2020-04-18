@@ -11,9 +11,9 @@ _The current documentation in this repository is not yet final and will be adjus
 * [General](#general)
 * [Goals](#goals)
 * [Technologies](#technologies)
-* [Setup](#setup)
+* [Setup](#setup-local-test)
 * [Infrastructure](#infrastructure) 
-* [Provisioning](#provisioning)
+* [Environment Variables](#environment-variables)
 
 ## General
 
@@ -26,13 +26,13 @@ This Jenkins server should be centrally managed and configured as a containerize
 _Further requirements can be found in the following list_
 
 - Docker host process capabilities
-- Matrix and SAML-SSO authentication
+- Matrix and SAML-2.0/SSO authentication
 - dedicated init.groovy startup procedures
 - AWS CodePipeline compatibility 
 
 ## Technologies
 
-* Docker: 18.09.9-ce
+* Docker: 18.06.3-ce
 * Jenkins: 2.232 (BlueOcean)
 
 ## Setup (local test)
@@ -73,17 +73,18 @@ The authentication method (and some other core parameters of the Jenkins configu
 
 The Jenkins-Dockerfile uses a lot of additional build arguments to simplify the parameter passing during image creation. the used arguments and their default values can be found in the table below.
 
-| argument | default | description |
-|----------|---------|-------------|
+| argument                      | default      | description                                        |
+|-------------------------------|--------------|----------------------------------------------------|
 | `DOCKER_GROUP`                | `docker`     | linux docker group                                 |
 | `SYSTEM_DOCKER_VERSION`       | `18.06.3-ce` | docker version                                     |
 | `JENKINS_UPDATE_VERSION`      | `2.222.1`    | target jenkins version                             |
 | `JENKINS_POST_SETUP_SLEEP_MS` | `1000`       | pre-init timer before starting the jenkins service |
+| `JENKINS_INTERNAL_PORT`       | `8080`       | internal port for our jenkins instance             |
 | `RUN_USER`                    | `jenkins`    | runtime container user                             |
 | `RUN_GROUP`                   | `jenkins`    | runtime container group                            |
 | `HELM_VERSION`                | `v2.16.6`    | target helm version                                |
 | `KUBECTL_VERSION`             | `v1.16.3`    | target kubectl version                             |
-| `APP_JENKINS_VERSION`         | `1.0.0`      | internal service version                           |
+| `APP_JENKINS_VERSION`         | `1.0.0`      | internal service version identifier                |
 
 ## links
 
