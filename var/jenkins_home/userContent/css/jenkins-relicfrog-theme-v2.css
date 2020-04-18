@@ -1,0 +1,1196 @@
+/* == relicfrog clear-theme v1.0.0.0 ================================================================================= */
+
+/* -- relicfrog clear-theme version identifier ----------------------------------------------------------------------- */
+
+body footer .jenkins_ver:after{
+    margin-left:15px;
+    content:"relicfrog/app-jenkins/core/1.0.0"
+}
+
+/* -- relicfrog clear-theme core elements ---------------------------------------------------------------------------- */
+
+.ui-refresh .page-header {
+    background-color: #121212;
+    background-image: url(../img/jenkins-relicfrog-logo-v1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#page-head #header .page-header__hyperlinks A {
+    text-decoration: none;
+}
+
+#page-head #header .page-header__brand-name,
+#header > div.page-header__brand A.page-header__brand-link,
+.ui-refresh #header .logo {
+    display: none;
+}
+
+/* --footer-elements-- */
+body footer {
+    padding: 11px 0;
+    background-color: #121212;
+    border: none;
+    font-size: 12px;
+    text-align: right;
+    font-family: "Roboto Light", "Helvetica Neue", sans-serif;
+    color: #fafafa;
+}
+
+body footer A,
+body footer A:focus,
+body footer A:visited,
+body footer .page_generated A,
+body footer .rest_api A,
+body footer .jenkins_ver A {
+    font-size: 12px;
+    font-family: "Roboto Light", "Helvetica Neue", sans-serif;
+    color: #fafafa;
+    text-decoration: none;
+}
+
+body footer A:hover,
+body footer .page_generated A:hover ,
+body footer .rest_api A:hover,
+body footer .jenkins_ver A:hover {
+    font-family: inherit;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* --sidebar-elements-- */
+body #executors > div.row > .pane-header img.icon-collapse,
+body #buildQueue > div.row > .pane-header img.icon-collapse {
+    width:0; height:0; padding: 10px;
+
+    background-image: url(../img/icons8-collapse-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+body #executors > div.row > .pane-header img.icon-expand,
+body #buildQueue > div.row > .pane-header img.icon-expand {
+    width:0; height:0; padding: 10px;
+
+    background-image: url(../img/icons8-expand-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --dashboard-table-footer--first-row-first-column-- */
+body .dashboard > div:nth-child(3) > table tr > td:nth-child(1),
+body .dashboard > div:nth-child(3) > table tr > td:nth-child(1) A,
+body .dashboard > div:nth-child(3) > table tr > td:nth-child(1) A:visited {
+
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #767676;
+    padding: 3px;
+}
+
+body .dashboard > div:nth-child(3) > table tr > td:nth-child(1) A:hover {
+
+    background-color:#111;
+    color:#fafafa;
+}
+
+body .dashboard > div:nth-child(3) > table tr > td:nth-child(1) A:focus {
+    padding: 3px;
+    color: #fafafa;
+    background-color:#111;
+}
+
+/* --breadcrumb-elements-- */
+body .yuimenuitem.yuimenuitem-selected .yuimenuitemlabel.yuimenuitemlabel-selected,
+body .breadcrumbs__wrapper #breadcrumb-menu-target #breadcrumb-menu .bd ul li:hover a:hover,
+body .breadcrumbs__wrapper #breadcrumb-menu-target #breadcrumb-menu .bd ul li a:hover,
+body .breadcrumbs__wrapper #breadcrumb-menu-target #breadcrumb-menu .bd ul li:hover {
+    background-color: #121212;
+    color: #fafafa;
+    text-decoration: none;
+}
+
+body .breadcrumbs__wrapper #breadcrumbs LI A:hover,
+body .breadcrumbs__wrapper #breadcrumbs LI A:focus {
+    text-decoration: none!important;
+}
+
+body .breadcrumbs__wrapper A.breadcrumbs__auto-refresh {
+    font-size: 10px;
+    font-weight: normal;
+    color: #bebebe;
+}
+
+body .breadcrumbs__wrapper A.breadcrumbs__auto-refresh:hover,
+body .breadcrumbs__wrapper A.breadcrumbs__auto-refresh:focus {
+    color:#333333;
+    text-decoration: none;
+}
+
+/* --primary-content-elements -- */
+body #main-panel .call-to-action {
+    background-color: #F8F8F8;
+    border-left: 6px solid #121212;
+    border-bottom: 1px solid #EAEFF2;
+}
+
+body #main-panel .call-to-action a {
+    color: #2e2933;
+}
+
+body #main-panel .call-to-action a:hover {
+    text-decoration: underline;
+    color: #6E254E;
+}
+
+/* --page-header-elements */
+.ui-refresh A.page-header__brand-link {
+  display: inline-block;
+  align-items: center;
+  height: 100%;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+}
+
+.ui-refresh A.page-header__brand-link:link,
+.ui-refresh A.page-header__brand-link:visited {
+  color: #4d545d;
+  text-decoration: none;
+}
+
+.ui-refresh A.page-header__brand-link:hover,
+.ui-refresh A.page-header__brand-link:focus {
+  text-decoration: underline;
+  color: #222222;
+  text-decoration-color: #222222;
+}
+
+.ui-refresh A.page-header__brand-link:link:focus {
+  outline: none;
+  color: #111111;
+  text-decoration-color: #111111;
+}
+
+.ui-refresh A.page-header__brand-link:link:focus .page-header__brand-name {
+    outline: auto;
+}
+
+.ui-refresh .page-header__hyperlinks A {
+    text-decoration: none;
+}
+
+.ui-refresh .page-header__hyperlinks A:hover,
+.ui-refresh .page-header__hyperlinks A:focus,
+.ui-refresh .page-header__hyperlinks A.mouseIsOverMenuSelector {
+  background-color: #47494B;
+}
+
+.ui-refresh .page-header__hyperlinks A:active {
+  background-color: #111111;
+}
+
+/* --page-header-search-elements-- */
+.ui-refresh .main-search__input:hover ~ .main-search__icon-leading {
+  color: #222222;
+}
+.ui-refresh .main-search__input:focus ~ .main-search__icon-leading {
+  color: #111111;
+}
+.ui-refresh .main-search__icon-trailing:hover,
+.ui-refresh .main-search__icon-trailing:focus {
+  color: #222222;
+}
+.ui-refresh .main-search__icon-trailing:active {
+  fill: #111111;
+}
+
+.ui-refresh #visible-am-container.visible #visible-am-button {
+  background-color: #111111;
+}
+
+/* base elements soft override ------------------------------------------------------------------------------------- */
+
+body a:link {
+  text-decoration: underline;
+  color: #111111;
+}
+body a:visited {
+  text-decoration: underline;
+  color: #111111;
+}
+body a.lowkey:link {
+  text-decoration: none;
+  color: inherit;
+}
+body a.lowkey:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+body a.lowkey:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #121212;
+}
+
+body #page-body {
+    background-color: #ffffff;
+}
+
+/* base elements hard override ------------------------------------------------------------------------------------- */
+
+*:focus {
+    outline: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    border: none!important;
+}
+
+img[src*="/new-package.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-empty-box-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+img[src*="/user.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-users-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+img[src*="/notepad.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-builds-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+img[src*="/gear2.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-settings-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+img[src*="/blueocean.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-blueocean-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+img[src*="/device-24x24.png"],
+img[src*="/device-32x32.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-lockable-res-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+img[src*="/credentials.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-secure-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+#breadcrumb-menu-target #breadcrumb-menu ul li img[src*="/clock.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-play-property-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+#breadcrumb-menu-target #breadcrumb-menu ul li img[src*="/edit-delete.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-delete-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+#breadcrumb-menu-target #breadcrumb-menu ul li img[src*="/help.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-service-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+#breadcrumb-menu-target #breadcrumb-menu ul li img[src*="/folder.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-add-view-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+#breadcrumb-menu-target #breadcrumb-menu ul li img[src*="/restart-stage.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-restart-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+#breadcrumb-menu-target #breadcrumb-menu ul li img[src*="/terminal.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-console-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+#breadcrumb-menu-target #breadcrumb-menu ul li img[src*="/redo.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-replay-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+#breadcrumb-menu-target #breadcrumb-menu ul li img[src*="/gear.png"] {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-settings-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* -- relicfrog clear-theme new icons -------------------------------------------------------------------------------- */
+
+body img.icon-rss {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    padding-left: 18px;
+    background: url(../img/icons8-rss-48.png) no-repeat;
+    background-size: contain;
+    margin-bottom: 3px;
+}
+
+body #rss-bar A,
+body #rss-bar A:visited,
+body #rss-bar A:focus {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#767676;
+}
+
+body #rss-bar A:hover {
+    text-decoration: none!important;
+    color:#111;
+}
+
+/* --icn-return-to-dashboard-- */
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel .icon-up.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel .icon-up.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel .icon-up.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel .icon-up.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel .icon-up.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel .icon-up.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-return-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-pipeline-status-- */
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel .icon-search.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel .icon-search.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel .icon-search.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel .icon-search.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel .icon-search.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel .icon-search.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-show-property-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-pipeline-terminal-- */
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel .icon-terminal.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel .icon-terminal.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel .icon-terminal.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel .icon-terminal.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel .icon-terminal.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-console-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-terminal-output-raw-- */
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel .icon-document.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel .icon-document.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel .icon-document.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-console-out-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-previous-build-- */
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel .icon-previous.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel .icon-previous.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel .icon-previous.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel .icon-previous.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel .icon-previous.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-prev-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-next-build-- */
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel .icon-next.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel .icon-next.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel .icon-next.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel .icon-next.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel .icon-next.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-next-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-workspaces-- */
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel .icon-folder.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel .icon-folder.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel .icon-folder.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel .icon-folder.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel .icon-folder.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-folder-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-change-statistics-- */
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(3) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(3) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(3) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(3) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(3) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel #tasks > div:nth-child(3) A.task-icon-link img { display: none; }
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(3) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(3) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(3) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(3) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(3) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel #tasks > div:nth-child(3) A.task-link { clear: both; }
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(3) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(3) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(3) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(3) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(3) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel #tasks > div:nth-child(3) A.task-icon-link {
+    width:0; height:0; padding: 12px 12px 12px 15px;
+
+    background-image: url(../img/icons8-compare-git-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+
+    display: block;
+    float: left;
+}
+
+/* --icn-pipeline-edit-- */
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel .icon-notepad.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel .icon-notepad.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel .icon-notepad.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel .icon-notepad.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel .icon-notepad.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel .icon-notepad.icon-md,
+body #page-body #main-panel .icon-notepad.icon-sm {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-edit-property-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-pipeline-or-view-delete-- */
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel .icon-edit-delete.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel .icon-edit-delete.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel .icon-edit-delete.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel .icon-edit-delete.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel .icon-edit-delete.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel .icon-edit-delete.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-delete-view-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-pipeline-start-- */
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel .icon-clock.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-start-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-pipeline-rebuild-- */
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel .icon-clock.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel .icon-clock.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel .icon-clock.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel .icon-clock.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel .icon-clock.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-play-property-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-open-blue-ocean-- */
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(8) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel #tasks > div:nth-child(8) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(8) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(8) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(8) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(8) A.task-icon-link img { display: none; }
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(8) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel #tasks > div:nth-child(8) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(8) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(8) A.task-link,
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(8) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(8) A.task-link { clear: both; }
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(8) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel #tasks > div:nth-child(8) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(8) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(8) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(8) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(8) A.task-icon-link
+{
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-blueocean-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+
+    margin-right: 4px;
+    display: block;
+    float: left;
+}
+
+/* --icn-restart-from-stage-- */
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(9) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(9) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(9) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(9) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(9) A.task-icon-link img { display: none; }
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(9) A.task-link,
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(9) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(9) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(9) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(9) A.task-link { clear: both; }
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(9) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(9) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(9) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(9) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(9) A.task-icon-link
+ {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-restart-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+
+    margin-right: 4px;
+    display: block;
+    float: left;
+}
+
+/* --icn-replay-- */
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(10) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(10) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(10) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(10) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(10) A.task-icon-link img { display: none; }
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(10) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(10) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(10) A.task-link,
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(10) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(10) A.task-link { clear: both; }
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(10) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(10) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(10) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(10) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(10) A.task-icon-link
+{
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-replay-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+
+    margin-right: 4px;
+    display: block;
+    float: left;
+}
+
+/* --icn-pipeline-steps-- */
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(11) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(11) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(11) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(11) A.task-icon-link img,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(11) A.task-icon-link img { display: none; }
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(11) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(11) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(11) A.task-link,
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(11) A.task-link,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(11) A.task-link { clear: both; }
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel #tasks > div:nth-child(11) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun"] #page-body #side-panel #tasks > div:nth-child(11) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel #tasks > div:nth-child(11) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel #tasks > div:nth-child(11) A.task-icon-link,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel #tasks > div:nth-child(11) A.task-icon-link
+{
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-flow-chart-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+
+    margin-right: 4px;
+    display: block;
+    float: left;
+}
+
+/* --icn-pipeline-syntax-- */
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel .icon-help.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel .icon-help.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction"] #page-body #side-panel .icon-help.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel .icon-help.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel .icon-help.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-service-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-new-pipeline-- */
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel .icon-new-package.icon-md,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel .icon-new-package.icon-md,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel .icon-new-package.icon-md,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel .icon-new-package.icon-md,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel .icon-new-package.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-empty-box-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-show-users-- */
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel .icon-user.icon-md,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel .icon-user.icon-md,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel .icon-user.icon-md,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel .icon-user.icon-md,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel .icon-user.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-users-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-build-history-- */
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel .icon-notepad.icon-md,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel .icon-notepad.icon-md,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel .icon-notepad.icon-md,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel .icon-notepad.icon-md,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel .icon-notepad.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-builds-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-jenkins-config-- */
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel .icon-gear2.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel .icon-gear2.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel .icon-gear2.icon-md,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel .icon-gear2.icon-md,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel .icon-gear2.icon-md,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel .icon-gear2.icon-md,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel .icon-gear2.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-settings-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-jenkins-my-views-- */
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel #tasks > div:nth-child(5) A.task-icon-link img,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel #tasks > div:nth-child(5) A.task-icon-link img,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel #tasks > div:nth-child(5) A.task-icon-link img,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel #tasks > div:nth-child(5) A.task-icon-link img,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel #tasks > div:nth-child(5) A.task-icon-link img { display: none; }
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel #tasks > div:nth-child(5) A.task-link,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel #tasks > div:nth-child(5) A.task-link,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel #tasks > div:nth-child(5) A.task-link,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel #tasks > div:nth-child(5) A.task-link,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel #tasks > div:nth-child(5) A.task-link { clear: both; }
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel #tasks > div:nth-child(5) A.task-icon-link,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel #tasks > div:nth-child(5) A.task-icon-link,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel #tasks > div:nth-child(5) A.task-icon-link,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel #tasks > div:nth-child(5) A.task-icon-link,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel #tasks > div:nth-child(5) A.task-icon-link {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-open-view-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+
+    margin-right: 4px;
+    display: block;
+    float: left;
+}
+
+/* --icn-jenkins-blue-ocean-main-view-- */
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel #tasks > div:nth-child(6) A.task-icon-link img,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel #tasks > div:nth-child(6) A.task-icon-link img,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel #tasks > div:nth-child(6) A.task-icon-link img,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel #tasks > div:nth-child(6) A.task-icon-link img,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel #tasks > div:nth-child(6) A.task-icon-link img { display: none; }
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel #tasks > div:nth-child(6) A.task-link,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel #tasks > div:nth-child(6) A.task-link,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel #tasks > div:nth-child(6) A.task-link,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel #tasks > div:nth-child(6) A.task-link,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel #tasks > div:nth-child(6) A.task-link { clear: both; }
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel #tasks > div:nth-child(6) A.task-icon-link,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel #tasks > div:nth-child(6) A.task-icon-link,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel #tasks > div:nth-child(6) A.task-icon-link,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel #tasks > div:nth-child(6) A.task-icon-link,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel #tasks > div:nth-child(6) A.task-icon-link {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-blueocean-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+
+    margin-right: 4px;
+    display: block;
+    float: left;
+}
+
+/* --icon-lockable-resources-- */
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel #tasks > div:nth-child(7) A.task-icon-link img,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel #tasks > div:nth-child(7) A.task-icon-link img,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel #tasks > div:nth-child(7) A.task-icon-link img,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel #tasks > div:nth-child(7) A.task-icon-link img,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel #tasks > div:nth-child(7) A.task-icon-link img { display: none; }
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel #tasks > div:nth-child(7) A.task-link,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel #tasks > div:nth-child(7) A.task-link,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel #tasks > div:nth-child(7) A.task-link,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel #tasks > div:nth-child(7) A.task-link,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel #tasks > div:nth-child(7) A.task-link { clear: both; }
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel #tasks > div:nth-child(7) A.task-icon-link,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel #tasks > div:nth-child(7) A.task-icon-link,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel #tasks > div:nth-child(7) A.task-icon-link,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel #tasks > div:nth-child(7) A.task-icon-link,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel #tasks > div:nth-child(7) A.task-icon-link {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-lockable-res-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+
+    margin-right: 4px;
+    display: block;
+    float: left;
+}
+
+/* --icn-jenkins-credentials-- */
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel .icon-credentials-credentials.icon-md,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel .icon-credentials-credentials.icon-md,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel .icon-credentials-credentials.icon-md,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel .icon-credentials-credentials.icon-md,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel .icon-credentials-credentials.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-secure-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-jenkins-credential-system-store-- */
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel .icon-credentials-system-store.icon-md,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel .icon-credentials-system-store.icon-md,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel .icon-credentials-system-store.icon-md,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel .icon-credentials-system-store.icon-md,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel .icon-credentials-system-store.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-access-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-jenkins-credential-new-domain-- */
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel .icon-credentials-new-domain.icon-md,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel .icon-credentials-new-domain.icon-md,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel .icon-credentials-new-domain.icon-md,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel .icon-credentials-new-domain.icon-md,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel .icon-credentials-new-domain.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-domain-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+
+/* --icn-jenkins-add-view-- */
+[data-model-type="com.cloudbees.plugins.credentials.SystemCredentialsProvider$UserFacingAction"] #page-body #side-panel .icon-folder.icon-md,
+[data-model-type="com.cloudbees.plugins.credentials.ViewCredentialsAction$RootActionImpl"] #page-body #side-panel .icon-folder.icon-md,
+[data-model-type="hudson.model.View$AsynchPeople"] #page-body #side-panel .icon-folder.icon-md,
+[data-model-type="hudson.model.Hudson"] #page-body #side-panel .icon-folder.icon-md,
+[data-model-type="hudson.model.AllView"] #page-body #side-panel .icon-folder.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-add-view-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --icn-pipeline-syntax-- */
+[data-model-type="org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"] #page-body #side-panel .icon-help.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.support.actions.WorkspaceRunAction"] #page-body #side-panel .icon-help.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.cps.replay.ReplayAction"] #page-body #side-panel .icon-help.icon-md,
+[data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowJob"] #page-body #side-panel .icon-help.icon-md {
+    width:0; height:0; padding: 12px;
+
+    background-image: url(../img/icons8-service-48.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20px;
+    background-position: -10px -11px;
+}
+
+/* --relicfrog-build-additional-images-sets ---------------------------------------------------------------------------*/
+
+/* --icn-build-flow-terminal-- */
+body #page-body #main-panel #nodeGraph table tbody tr img.icon32x32 {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 24px!important; height: 24px!important; padding-left: 24px;
+    background: url(../img/icons8-mini-console-48.png) no-repeat;
+    background-size: contain;
+    opacity: 0.775;
+}
+
+/* --icn-build-flow-fail-- */
+body #page-body #main-panel #nodeGraph table tbody tr img.icon-red,
+body #page-body #main-panel #nodeGraph table tbody tr img.icon-yellow {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 24px!important; height: 24px!important; padding-left: 24px;
+    background: url(../img/icons8-mini-error-96.png) no-repeat;
+    background-size: contain;
+}
+
+/* --icn-build-flow-success-- */
+body #page-body #main-panel #nodeGraph table tbody tr img.icon-blue,
+body #page-body #main-panel #nodeGraph table tbody tr img.icon-green {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 24px!important; height: 24px!important; padding-left: 24px;
+    background: url(../img/icons8-mini-ok-48.png) no-repeat;
+    background-size: contain;
+}
+
+body #page-body #main-panel #nodeGraph table tbody tr img.icon-nobuilt {
+   display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 24px!important; height: 24px!important; padding-left: 24px;
+    background: url(../img/icons8-mini-unkwn-48.png) no-repeat;
+    background-size: contain;
+}
+
+/* --relicfrog-build-health-image-sets ------------------------------------------------------------------------------- */
+
+body img.icon-health-80plus {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32px; height: 32px; padding-left: 32px;
+  background: url(../img/health-80plus.png) no-repeat;
+  background-size: contain;
+}
+
+body #buildHistory .pane-header img.icon-health-80plus {
+  display: inline;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32px; height: 32px; padding-left: 32px;
+  background: url(../img/health-80plus.png) no-repeat;
+  background-size: contain;
+}
+
+body img.icon-health-60to79 {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32px; height: 32px; padding-left: 32px;
+  background: url(../img/health-60to79.png) no-repeat;
+  background-size: contain;
+}
+
+body img.icon-health-40to59 {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32px; height: 32px; padding-left: 32px;
+  background: url(../img/health-40to59.png) no-repeat;
+  background-size: contain;
+}
+
+body img.icon-health-20to39 {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32px; height: 32px; padding-left: 32px;
+  background: url(../img/health-20to39.png) no-repeat;
+  background-size: contain;
+}
+
+body img.icon-health-00to19 {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32px; height: 32px; padding-left: 32px;
+  background: url(../img/health-00to19.png) no-repeat;
+  background-size: contain;
+}
+
+/* --relicfrog-build-image-sets -------------------------------------------------------------------------------------- */
+
+body div.dashboard table img.icon-clock {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32px; height: 32px; padding-left: 48px;
+  background: url(../img/icons8-build-schedule-v1-52.png) no-repeat;
+  background-size: contain;
+}
+
+body img.icon-red {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32px; height: 32px; padding-left: 48px;
+  background: url(../img/icons8-build-fail-v2-96.png) no-repeat;
+  background-size: contain;
+}
+
+body img.icon-nobuilt {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32px; height: 32px; padding-left: 48px;
+  background: url(../img/icons8-build-unkwn-v2-96.png) no-repeat;
+  background-size: contain;
+}
+
+body img.icon-blue,
+body img.icon-green {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32px; height: 32px; padding-left: 48px;
+  background: url(../img/icons8-build-success-v2-96.png) no-repeat;
+  background-size: contain;
+}
+
+/* --console-output------------------------------------------------------------------------------------------------- */
+.console-output .error-inline{color:#f44336}.console-output,.console-output *{position:relative;font-family:Roboto Mono,monospace!important;font-size:14px;background:#131314;color:#e9eded;cursor:text}.console-output{padding:10px 20px}.ace_editor{font:12px/normal Roboto Mono,monospace}[style^="color:gray"]{color:#9e9e9e!important}
+body .console-output A,
+body .console-output A:visited,
+body .console-output A:focus {
+    color: #009688!important;
+    text-decoration: none;
+}
+
+body .console-output A:hover {
+    color: #009688!important;
+}
+
+body #page-body #main-panel #nodeGraph table {
+    border: none;
+}
+
+body #page-body #main-panel #nodeGraph table tbody tr {
+    border: none;
+    background-color: #1d1d1d;
+}
+
+body #page-body #main-panel #nodeGraph table tbody tr:hover {
+    background-color: #000;
+}
+
+body #page-body #main-panel #nodeGraph table tbody A:hover {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+body #page-body #main-panel #nodeGraph table tbody A,
+body #page-body #main-panel #nodeGraph table tbody A:visited,
+body #page-body #main-panel #nodeGraph table tbody A:focus,
+body #page-body #main-panel #nodeGraph table tbody tr td {
+    text-decoration: none;
+    color: #e9eded;
+    font-family: "Roboto Mono",monospace;
+    font-size: 11px;
+}
+
+/* == color definition sets ======================================================================================== */
+
+.black-primary {
+    background-color: #121212;
+}
+.black-secondary {
+    background-color: #47494B;
+}
+.black-shadow {
+    background-color: #101010;
+}
+.black-shadow-dark {
+    background-color: #111111;
+}

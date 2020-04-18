@@ -1,0 +1,7 @@
+<ivysettings>
+    <settings defaultResolver="downloadGrapes"/>
+    <resolvers>
+        <chain name="downloadGrapes">
+        </chain>
+    </resolvers>
+</ivysettings>

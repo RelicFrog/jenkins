@@ -1,0 +1,26 @@
+.red-primary {
+    background-color: #AE031B;
+}
+.red-secondary {
+    background-color: #8E0324;
+}
+.red-shadow {
+    background-color: #9C0618;
+}
+.red-shadow-dark {
+    background-color: #5A0412;
+}
+
+
+.black-primary {
+    background-color: #121212;
+}
+.black-secondary {
+    background-color: #222222;
+}
+.black-shadow {
+    background-color: #101010;
+}
+.black-shadow-dark {
+    background-color: #111111;
+}
